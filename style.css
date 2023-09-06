@@ -6,28 +6,28 @@ body{
 }
 
 .logo{
-    width: 140px;
-    height: 60px;
+    width: 8.75rem;
+    height: 3.75rem;
 }
 .navbar{
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     background-color: #000;
     
 }
 .navbar-nav a{
     color: #fff;
-    margin-left: 60px;
+    margin-left: 3.75rem;
     font-weight: 600;
 }
 .navbar-nav a:hover{
     color: #fff;
-    text-shadow: 22px #fff;
+    text-shadow: 1.375rem #fff;
 }
 
 
 .home-img img{
-    height: 700px;
+    height: 43.75rem;
     width: 100%;
 }
 
@@ -53,15 +53,15 @@ body{
     font-size: 1.2rem;
     font-weight: 200;
     font-family: 'Roboto', sans-serif;
-    width: 500px;
-    padding: 40px 0px;
+    width: 31.25rem;
+    padding: 2.5rem 0rem;
 }
 .chip-img{
     position: absolute;
     top: -0%;
     left:50%;
     animation: imgan 2s infinite;
-    margin-top: -600px;
+    margin-top: -37.5rem;
 }
 
 .chip-img img{
@@ -69,8 +69,8 @@ body{
 
 }
 .profession img{
-    width: 650px;
-    height: 940px;
+    width: 40.625rem;
+    height: 58.75rem;
 }
 .chip-img2{
     position: absolute;
@@ -105,8 +105,8 @@ body{
     position: fixed;
     background-color: orangered;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     left: 68%;
 }
 .red:hover{
@@ -116,8 +116,8 @@ body{
     position: fixed;
     background-color: green;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     left: 72%;
 }
 .green:hover{
@@ -127,8 +127,8 @@ body{
     position: fixed;
     background-color: greenyellow;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     left: 76%;
 }
 .green2:hover{
@@ -138,8 +138,8 @@ body{
     position: fixed;
     background-color: black;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     left: 80%;
 }
 .black:hover{
@@ -158,17 +158,17 @@ body{
     
 }
 .text1 span{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    width: 20px;
+    width: 1.25rem;
 }
 .text2{
-    margin-left: 25px;
+    margin-left: 1.563rem;
     font-size: 2.2rem;
     font-weight: 600;
 }
 .text2 span{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 
 }
@@ -198,8 +198,8 @@ body{
     right: 0;
     left: 52%;
     transform: translateY(-50%);
-    width: 1768px;
-    height: 1768px;
+    width: 110.5rem;
+    height: 110.5rem;
     overflow: hidden;
     pointer-events: none;
 }
@@ -207,8 +207,8 @@ body{
     position: absolute;
     top: -0%;
     right: 0%;
-    width: 1798px;
-    height: 1798px;
+    width: 110.5rem;
+    height: 110.5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -245,16 +245,15 @@ body{
     flex-direction: column;
     color: #754ef9;
     transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 908px;
-    
-    padding: 13px 0px;
+    transform-origin: 56.75rem;
+    padding: 0.813rem 0rem;
 }
 .home .profession-container .profession-box .profession:nth-child(1) i {
-    margin-right: 15px;
+    margin-right: 0.938rem;
 }
 .home .profession-container .profession-box .profession:nth-child(2),
 .home .profession-container .profession-box .profession:nth-child(4) {
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 
@@ -279,7 +278,7 @@ body{
 
 /*............................responsive...................*/
 
-@media (min-width:1300px){
+/*👉@media (min-width:1300px){
     body{
         overflow-x: hidden;
     }
@@ -466,7 +465,1301 @@ body{
 
 
 
+👈*/
+
+/*..............................responsive st max width 600px........................*/
+@media (max-width:37.5rem){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: .5rem;
+    }
+    .home-img img{
+        height: 35.75rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 2.7rem;
+    }
+    .title p{
+        font-size: .9rem;
+        width: 15rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 120%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1rem;
+        font-weight: 600;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 1.563rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1rem;
+        font-weight: 600;
+    
+    }
+    .profession img{
+        width: 21.625rem;
+        height: 35.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 60%;
+        right: 0;
+        left: 45%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 56.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.9rem;
+        height: 1.2rem;
+        left: 16%;
+        top: 22%;
+    }
+    .green{
+        width:.9rem;
+        height: 1.2rem;
+        left: 18%;
+        top: 22%;
+    }
+    .green2{
+        width:.9rem;
+        height: 1.2rem;
+        left: 20%;
+        top: 22%;
+    }
+    .black{
+        width:.9rem;
+        height: 1.2rem;
+        left: 22%;
+        top: 22%;
+    }
+
+
+}
+
+/*..............................responsive end max width 600px........................*/
 
 
 
+/*..............................responsive st max width 412px........................*/
+
+@media (max-width:25.75rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 2.6rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -.5rem;
+        margin-top: -1rem;
+    }
+    .home-img img{
+        height: 35.75rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 2.4rem;
+    }
+    .title p{
+        font-size: .8rem;
+        width: 10rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 110%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: .55rem;
+        font-weight: 600;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 1.563rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: .55rem;
+        font-weight: 600;
+    
+    }
+    .profession img{
+        width: 15.625rem;
+        height: 29.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 60%;
+        right: 0;
+        left: 41%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 16%;
+        top: 21%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 18%;
+        top: 21%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 20%;
+        top: 21%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 22%;
+        top: 21%;
+    }
+
+
+}
+
+/*..............................responsive end max width 412px........................*/
+
+
+
+/*..............................responsive st max width 768px........................*/
+
+@media (max-width:48rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 2.6rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -.5rem;
+        margin-top: -1rem;
+    }
+    .home-img img{
+        height: 40.75rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+    .title p{
+        font-size: .9rem;
+        width: 20rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 110%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1rem;
+        font-weight: 600;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 6rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1rem;
+        font-weight: 600;
+    
+    }
+    .profession img{
+        width: 25.625rem;
+        height: 39.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 52%;
+        right: 0;
+        left: 47%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 23%;
+        top: 24%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 25%;
+        top: 24%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 27%;
+        top: 24%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 29%;
+        top: 24%;
+    }
+
+
+}
+
+/*..............................responsive end max width 768px........................*/
+
+
+
+/*..............................responsive st max width 860px........................*/
+
+@media (max-width:53.75rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 2.5rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -3rem;
+        margin-top: -2rem;
+    }
+    .home-img img{
+        height: 40.75rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 3.2rem;
+    }
+    .title p{
+        font-size: .9rem;
+        width: 20rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 110%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1rem;
+        font-weight: 600;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1rem;
+        font-weight: 600;
+    
+    }
+    .profession img{
+        width: 25.625rem;
+        height: 39.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 52%;
+        right: 0;
+        left: 49%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 28%;
+        top: 23%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 30%;
+        top: 23%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 32%;
+        top: 23%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 34%;
+        top: 23%;
+    }
+
+
+}
+/*..............................responsive end max width 680px........................*/
+
+
+
+/*..............................responsive st max width 600px for hight 1280........................*/
+
+
+
+@media (max-width:53.75rem ){
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 24%;
+        top: 20%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 26%;
+        top: 20%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 28%;
+        top: 20%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 30%;
+        top: 20%;
+    }
+}
+
+
+
+
+
+/*..............................responsive end max width 600px for hight 1280........................*/
+
+
+
+/*..............................responsive st max width 1024px........................*/
+
+@media (max-width:64rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 2.8rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -2rem;
+        margin-top: -.5rem;
+    }
+    .home-img img{
+        height: 37.55rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 3.4rem;
+    }
+    .title p{
+        font-size: .9rem;
+        width: 20rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 110%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1rem;
+        font-weight: 600;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1rem;
+        font-weight: 600;
+    
+    }
+    .profession img{
+        width: 29.625rem;
+        height: 43.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 52%;
+        right: 0;
+        left: 55%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 32%;
+        top: 41.5%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 34%;
+        top: 41.5%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 36%;
+        top: 41.5%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 38%;
+        top: 41.5%;
+    }
+
+
+}
+
+/*..............................responsive end max width 1024px........................*/
+
+
+
+/*..............................responsive st max width 1290px........................*/
+
+@media (max-width:80.625rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 2.8rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -2rem;
+        margin-top: -.5rem;
+    }
+    .home-img img{
+        height: 36.55rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 3.4rem;
+    }
+    .title p{
+        font-size: .9rem;
+        width: 20rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 100%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1rem;
+        font-weight: 600;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1rem;
+        font-weight: 600;
+    
+    }
+    .profession img{
+        width: 32.625rem;
+        height: 46.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 44%;
+        right: 0;
+        left: 55%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 36%;
+        top: 45.5%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 38%;
+        top: 45.5%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 40%;
+        top: 45.5%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 42%;
+        top: 45.5%;
+    }
+
+
+}
+
+/*..............................responsive end max width 1280px........................*/
+
+
+
+/*..............................responsive st max width 1440px........................*/
+
+@media (max-width:90rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 3rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -2rem;
+        margin-top: -.5rem;
+    }
+    .home-img img{
+        height: 36.55rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 4rem;
+    }
+    .title p{
+        font-size: 1.2rem;
+        width: 30rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 120%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2.8rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1.1rem;
+        font-weight: 500;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1.1rem;
+        font-weight: 500;
+    
+    }
+    .profession img{
+        width: 36.625rem;
+        height: 50.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 44%;
+        right: 0;
+        left: 60%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 40%;
+        top: 47.5%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 42%;
+        top: 47.5%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 44%;
+        top: 47.5%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 46%;
+        top: 47.5%;
+    }
+
+
+}
+
+/*..............................responsive end max width 1440px........................*/
+
+
+
+/*..............................responsive st max width 1680px........................*/
+
+@media (max-width:105rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 4rem;
+    }
+    .navbar-nav a{
+        font-size: 1.2rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -2rem;
+        margin-top: -.5rem;
+    }
+    .home-img img{
+        height: 42.55rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 4.4rem;
+    }
+    .title p{
+        font-size: 1.2rem;
+        width: 30rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 120%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2.8rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1.1rem;
+        font-weight: 500;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1.1rem;
+        font-weight: 500;
+    
+    }
+    .profession img{
+        width: 41.625rem;
+        height: 55.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 37.6%;
+        right: 0;
+        left: 60%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 40%;
+        top: 47.5%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 42%;
+        top: 47.5%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 44%;
+        top: 47.5%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 46%;
+        top: 47.5%;
+    }
+
+
+}
+
+/*..............................responsive end max width 1680px........................*/
+
+
+
+/*..............................responsive st max width 1600px for hight 900px........................*/
+
+@media (max-width:105rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 3rem;
+    }
+    .navbar-nav a{
+        font-size: 1.2rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -6rem;
+        margin-top: -.5rem;
+    }
+    .home-img img{
+        height: 42.55rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 4.1rem;
+    }
+    .title p{
+        font-size: 1.2rem;
+        width: 30rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 106%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 2.8rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1.1rem;
+        font-weight: 500;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1.1rem;
+        font-weight: 500;
+    
+    }
+    .profession img{
+        width: 41.625rem;
+        height: 55.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 37.6%;
+        right: 0;
+        left: 56%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 111.5rem;
+        height: 111.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 55.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width:.1rem;
+        height: 1.4rem;
+        left: 40%;
+        top: 50.5%;
+    }
+    .green{
+        width:.1rem;
+        height: 1.4rem;
+        left: 42%;
+        top: 50.5%;
+    }
+    .green2{
+        width:.1rem;
+        height: 1.4rem;
+        left: 44%;
+        top: 50.5%;
+    }
+    .black{
+        width:.1rem;
+        height: 1.4rem;
+        left: 46%;
+        top: 50.5%;
+    }
+
+
+}
+
+/*..............................responsive end max width 1600px for 900 hight........................*/
+
+
+/*..............................responsive st max width 1920px........................*/
+
+@media (max-width:120rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 5rem;
+    }
+    .navbar-nav a{
+        font-size: 1.6rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -15rem;
+        margin-top: -.5rem;
+    }
+    .home-img img{
+        height: 50.55rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 5.1rem;
+    }
+    .title p{
+        font-size: 1.7rem;
+        width: 40rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 112%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 3.2rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1.5rem;
+        font-weight: 500;
+    
+    }
+    .profession img{
+        width: 46.625rem;
+        height: 61.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 40.6%;
+        right: 0;
+        left: 60%;
+        width: 151.5rem;
+        height: 151.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 151.5rem;
+        height: 151.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 75.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 40%;
+        top: 46.5%;
+    }
+    .green{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 42%;
+        top: 46.5%;
+    }
+    .green2{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 44%;
+        top: 46.5%;
+    }
+    .black{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 46%;
+        top: 46.5%;
+    }
+
+
+}
+
+/*..............................responsive end max width 1600px for 900 hight........................*/
+
+
+/*..............................responsive st max width 1920px........................*/
+
+@media (min-width:120rem ){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        height: 5rem;
+    }
+    .navbar-nav a{
+        font-size: 1.6rem;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-left: -15rem;
+        margin-top: -.5rem;
+    }
+    .home-img img{
+        height: 50.55rem;
+    }
+    .title{
+        top:6%;
+        left: 4%;
+    }
+    .title h1{
+        font-size: 5.1rem;
+    }
+    .title p{
+        font-size: 1.7rem;
+        width: 40rem;
+        padding: 2rem 0rem;
+    }
+    .home-text{
+        left: 4%;
+        top: 112%;
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 3.2rem;
+        font-weight: 600;
+        
+    }
+    .text1 span{
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 1.25rem;
+    }
+    .text2{
+        margin-left: 2rem;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    .text2 span{
+        font-size: 1.5rem;
+        font-weight: 500;
+    
+    }
+    .profession img{
+        width: 46.625rem;
+        height: 61.75rem;
+        margin-top: 45%;
+    }
+    .profession-container{
+        top: 40.6%;
+        right: 0;
+        left: 60%;
+        width: 151.5rem;
+        height: 151.5rem;
+
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 151.5rem;
+        height: 151.5rem;
+
+    }
+    .home .profession-container .profession-box .profession{
+        transform-origin: 75.45rem;
+        padding: 0.813rem 0rem;
+    }
+
+    .red{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 40%;
+        top: 46.5%;
+    }
+    .green{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 42%;
+        top: 46.5%;
+    }
+    .green2{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 44%;
+        top: 46.5%;
+    }
+    .black{
+        width: 2.375rem;
+        height: 2.375rem;
+        left: 46%;
+        top: 46.5%;
+    }
+
+
+}
+
+/*..............................responsive end min width 1920px t........................*/
 

@@ -1,8 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap');
 
+:root {
+    --space-3xs: clamp(1.5rem, calc(0.32rem + 3.73vw), 4.56rem);
+    --space-2xs: clamp(0.1rem, calc(0.17rem + 6.36vw), 1.13rem);
+    --space-xs: clamp(1.06rem, calc(0.89rem + 9.09vw), 1.69rem);
+    --space-s: clamp(1.38rem, calc(1.14rem + 12.73vw), 2.25rem);
+    --space-m: clamp(2.06rem, calc(1.70rem + 19.09vw), 3.38rem);
+    --space-l: clamp(.5rem, calc(2.27rem + .45vw), 4rem);
+    --space-xl: clamp(4.13rem, calc(3.41rem + 38.18vw), 6.75rem);
+    --space-2xl: clamp(5.50rem, calc(4.55rem + 50.91vw), 9.00rem);
+    --space-3xl: clamp(8.25rem, calc(6.82rem + 76.36vw), 13.50rem);
+  
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.38rem, calc(0.17rem + 10.91vw), 1.13rem);
+    --space-2xs-xs: clamp(0.69rem, calc(0.41rem + 14.55vw), 1.69rem);
+    --space-xs-s: clamp(1.06rem, calc(0.74rem + 17.27vw), 4.25rem);
+    --space-s-m: clamp(1.38rem, calc(0.83rem + 29.09vw), 3.38rem);
+    --space-m-l: clamp(2.06rem, calc(1.40rem + 35.45vw), 4.50rem);
+    --space-l-xl: clamp(2.75rem, calc(1.66rem + 58.18vw), 6.75rem);
+    --space-xl-2xl: clamp(4.13rem, calc(2.80rem + 70.91vw), 9.00rem);
+    --space-2xl-3xl: clamp(5.50rem, calc(3.32rem + 116.36vw), 13.50rem);
+  
+    /* Custom pairs */
+    --space-l-2xl: clamp(2.75rem, calc(1.05rem + 90.91vw), 9.00rem);
+  }
+
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .logo{
@@ -27,7 +52,7 @@ body{
 
 
 .home-img img{
-    height: 43.75rem;
+    height: fit-content;
     width: 100%;
 }
 
@@ -44,33 +69,27 @@ body{
 }
 .title h1{
     color: #fff;
-    font-size: 4rem;
+    font-size:var(--space-3xs);
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
 }
 .title p{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: var(--space-2xs);
     font-weight: 200;
     font-family: 'Roboto', sans-serif;
     width: 31.25rem;
     padding: 2.5rem 0rem;
 }
-.chip-img{
-    position: absolute;
-    top: -0%;
-    left:50%;
-    animation: imgan 2s infinite;
-    margin-top: -37.5rem;
-}
 
-.chip-img img{
-    z-index: 2;
+.profession{
+    filter: drop-shadow(70 50 100.75rem rgb(109, 106, 107));
 
 }
 .profession img{
-    width: 40.625rem;
-    height: 58.75rem;
+    width: fit-content;
+    height: fit-content;
+    
 }
 .chip-img2{
     position: absolute;
@@ -88,7 +107,7 @@ body{
 .chip-img4{
     position: absolute;
     top: 0%;
-    left: 46%;
+    left: min(46%);
     
 }
 
@@ -101,7 +120,7 @@ body{
     display: flex;
     
 }
-.red{
+/*👉.red{
     position: fixed;
     background-color: orangered;
     border-radius: 50%;
@@ -144,7 +163,7 @@ body{
 }
 .black:hover{
     background-color: black;
-}
+}👈*/
 .home-text{
     position: absolute;
     left: 5%;
@@ -153,18 +172,18 @@ body{
 }
 .text1{
     margin-left: 0px;
-    font-size: 2.2rem;
+    font-size: var(--space-l);
     font-weight: 600;
     
 }
 .text1 span{
-    font-size: 1.125rem;
+    font-size: var(--space-2xs);
     font-weight: 400;
     width: 1.25rem;
 }
 .text2{
     margin-left: 1.563rem;
-    font-size: 2.2rem;
+    font-size:  var(--space-l);
     font-weight: 600;
 }
 .text2 span{
@@ -179,24 +198,11 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .profession-container{
     position: absolute;
     top: 60%;
     right: 0;
-    left: 52%;
+    left: 55%;
     transform: translateY(-50%);
     width: 110.5rem;
     height: 110.5rem;
@@ -219,18 +225,23 @@ body{
 @keyframes professionRotate{
     0%,20%{
         transform: rotate(0deg);
+        
     }
     25%,45%{
         transform: rotate(90deg);
+        
     }
     50%,70%{
         transform: rotate(180deg);
+        
     }
     75%,95%{
         transform: rotate(270deg);
+        
     }
     100%{
         transform: rotate(360deg);
+        
     }
 }
 
@@ -254,6 +265,7 @@ body{
 .home .profession-container .profession-box .profession:nth-child(2),
 .home .profession-container .profession-box .profession:nth-child(4) {
     padding-bottom: 1.25rem;
+    
 }
 
 
@@ -266,1501 +278,450 @@ body{
     visibility: hidden;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*............................responsive...................*/
-
-/*👉@media (min-width:1300px){
-    body{
-        overflow-x: hidden;
-    }
-    .profession-container{
-        position: absolute;
-        top: 55%;
-        right: 0;
-        left: 60%;
-        transform: translateY(-50%);
-        width: 1768px;
-        height: 1768px;
-        overflow: hidden;
-        pointer-events: none;
-    }
-    .home .profession-container .profession-box{
-        position: absolute;
-        top: -0%;
-        right: 0%;
-        width: 1798px;
-        height: 1798px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: professionRotate 7s ease infinite  ;
-    }
-    .home-text{
-        top: 91%;
-    }
-    .red{
-        left: 70%;
-        top: 71%;
-    }
-    .green{
-        left: 74%;
-        top: 71%;
-    }
-    .green2{
-        left: 78%;
-        top: 71%;
-    }
-    .black{
-        left: 82%;
-        top: 71%;
-    }
-    .secction1{
-        width: 100%;
-        height: 900px;
-        position: relative;
-        background-color: #fff;
-    }
-
-
+/*👉.section1{
+    width: 100%;
+    height: 1000rem;
+    background-color: #fff;
+    margin-top: 5%;
+    position: relative;
 }
-
-
-
-
-
-
-
-@media (min-width:1440px){
-    body{
-        overflow-y: hidden;
-    }
-    .profession-container{
-        position: absolute;
-        top: 60%;
-        right: 0;
-        left: 55%;
-        transform: translateY(-50%);
-        width: 2668px;
-        height: 2668px;
-        overflow: hidden;
-        pointer-events: none;
-    }
-    .home .profession-container .profession-box{
-        position: absolute;
-        top: -0%;
-        right: 0%;
-        width: 2698px;
-        height: 2698px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: professionRotate 7s ease infinite  ;
-    }
-
-    .home .profession-container .profession-box .profession{
-        position: absolute;
-        display: flex;
-        left: 0;
-        align-items: center;
-        flex-direction: column;
-        color: #754ef9;
-        transform: rotate(calc(360deg / 4 * var(--i)));
-        transform-origin: 1298px;
-        
-        padding: 13px 0px;
-    }
-
-
-    .home-text{
-        top: 110%;
-    }
-    .red{
-        left: 75%;
-        top: 90%;
-    }
-    .green{
-        left: 78%;
-        top: 90%;
-    }
-    .green2{
-        left: 81%;
-        top: 90%;
-    }
-    .black{
-        left: 84%;
-        top: 90%;
-    }
-    .secction1{
-        margin-top: 250px;
-        width: 100%;
-        height: 900px;
-        position: relative;
-        background-color: #fff;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 3.2rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 25px;
-        font-weight: 400;
-        width: 20px;
-    }
-    .text2{
-        margin-left: 25px;
-        font-size: 3.2rem;
-        font-weight: 600;
-    }
-    .text2 span{
-        font-size: 25px;
-        font-weight: 400;
-    
-    }
-    .home-img img{
-        height: 1000px;
-        width: 100%;
-    }
-    .profession img{
-        width: 800px;
-        height: 1180px;
-    }
-    .title h1{
-        font-size: 6rem;
-    }
-    .title p{
-        font-size: 1.6rem;
-    }
-    .navbar{
-        height: 80px;
-    }
-    .navbar-nav a{
-        font-size: 1.4rem;
-    }
-    .logo{
-        margin-left: -180px;
-    }
-    .search img{
-        width: 30px;
-        height: 30px;
-    }
-    .cart img{
-        width: 30px;
-        height: 30px;
-    }
-}
-
-
-
-
 👈*/
 
-/*..............................responsive st max width 600px........................*/
-@media (max-width:37.5rem){
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: .5rem;
-    }
-    .home-img img{
-        height: 35.75rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 2.7rem;
-    }
+@media (max-width:600px){
     .title p{
-        font-size: .9rem;
-        width: 15rem;
-        padding: 2rem 0rem;
-    }
-    .home-text{
-        left: 4%;
-        top: 120%;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 2rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 1rem;
-        font-weight: 600;
-        width: 1.25rem;
-    }
-    .text2{
-        margin-left: 1.563rem;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .text2 span{
-        font-size: 1rem;
-        font-weight: 600;
-    
-    }
-    .profession img{
-        width: 21.625rem;
-        height: 35.75rem;
-        margin-top: 45%;
-    }
-    .profession-container{
-        top: 60%;
-        right: 0;
-        left: 45%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box{
-        top: -0%;
-        right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 56.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.9rem;
-        height: 1.2rem;
-        left: 16%;
-        top: 22%;
-    }
-    .green{
-        width:.9rem;
-        height: 1.2rem;
-        left: 18%;
-        top: 22%;
-    }
-    .green2{
-        width:.9rem;
-        height: 1.2rem;
-        left: 20%;
-        top: 22%;
-    }
-    .black{
-        width:.9rem;
-        height: 1.2rem;
-        left: 22%;
-        top: 22%;
-    }
-
-
-}
-
-/*..............................responsive end max width 600px........................*/
-
-
-
-/*..............................responsive st max width 412px........................*/
-
-@media (max-width:25.75rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 2.6rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -.5rem;
-        margin-top: -1rem;
-    }
-    .home-img img{
-        height: 35.75rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 2.4rem;
-    }
-    .title p{
+        width: 20rem;
+        height: 1rem;
+        padding: 0.4rem 0rem;
         font-size: .8rem;
-        width: 10rem;
-        padding: 2rem 0rem;
+        
+    }
+    .title p .p2{
+        visibility: hidden
     }
     .home-text{
-        left: 4%;
-        top: 110%;
+        top: 280%; 
+        margin-left: -2%;      
     }
     .text1{
         margin-left: 0px;
-        font-size: 1.5rem;
-        font-weight: 600;
-        
+        font-size: 1.4rem;  
     }
     .text1 span{
-        font-size: .55rem;
-        font-weight: 600;
-        width: 1.25rem;
+        font-size: .8rem;
     }
     .text2{
         margin-left: 1.563rem;
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 1.4rem;
     }
     .text2 span{
-        font-size: .55rem;
-        font-weight: 600;
-    
+        font-size: .8rem;
+    }
+    .profession{
+        filter: drop-shadow(0 0 0.75rem rgb(109, 106, 107));
     }
     .profession img{
-        width: 15.625rem;
-        height: 29.75rem;
-        margin-top: 45%;
+        width: 370px;
+        height: 550px;
+
     }
     .profession-container{
-        top: 60%;
+        top: 185%;
         right: 0;
-        left: 41%;
-        width: 111.5rem;
-        height: 111.5rem;
-
+        left: 2%;
+        width: 110.5rem;
+        height: 110.5rem;
     }
     .home .profession-container .profession-box{
         top: -0%;
         right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
-
+        width: 110.5rem;
+        height: 110.5rem;
     }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 16%;
-        top: 21%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 18%;
-        top: 21%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 20%;
-        top: 21%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 22%;
-        top: 21%;
-    }
-
+    
+.home .profession-container .profession-box .profession{
+    transform-origin: 55.75rem;
+}
+.logo{
+    width: 7.75rem;
+    height: 3.15rem;
 
 }
-
-/*..............................responsive end max width 412px........................*/
-
-
-
-/*..............................responsive st max width 768px........................*/
-
-@media (max-width:48rem ){
+.logo img{
+    left: 0;
+    margin-top: -76;
     
-    body{
-        overflow-x: hidden;
+}
+}
+
+
+@media (min-width:601px) and (max-width:1024px){
+    .title p{
+        width: 20rem;
+        height: 1rem;
+        padding: 0.4rem 0rem;
+        font-size: .8rem;
+        
     }
-    .navbar{
-        width: 100%;
-        height: 2.6rem;
+
+    .home-text{
+        top: 140%; 
+        margin-left: -2%;      
     }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -.5rem;
-        margin-top: -1rem;
+    .text1{
+        margin-left: 0px;
+        font-size: 2rem;  
     }
-    .home-img img{
-        height: 40.75rem;
+    .text1 span{
+        font-size: .8rem;
     }
-    .title{
-        top:6%;
-        left: 4%;
+    .text2{
+        margin-left: 1.563rem;
+        font-size: 2rem;
     }
-    .title h1{
+    .text2 span{
+        font-size: .8rem;
+    }
+    .profession{
+        filter: drop-shadow(0 0 0.75rem rgb(109, 106, 107));
+    }
+    .profession img{
+        width: 420px;
+        height: 700px;
+
+    }
+    .profession-container{
+        top: 90%;
+        right: 0;
+        left: 44%;
+        width: 110.5rem;
+        height: 110.5rem;
+    }
+    .home .profession-container .profession-box{
+        top: -0%;
+        right: 0%;
+        width: 110.5rem;
+        height: 110.5rem;
+    }
+    
+.home .profession-container .profession-box .profession{
+    transform-origin: 55.15rem;
+}
+.logo{
+    width: 7.75rem;
+    height: 3.15rem;
+
+}
+.logo img{
+    left: 0;
+    margin-top: -76;
+    
+}
+}
+
+
+
+
+
+@media (min-width:1281px) and (max-width:1440px){
+    .title p{
+        width: 40rem;
+        height: 1rem;
+        padding: 0.4rem 0rem;
+        font-size: 1.1rem;
+        padding: 1.4rem 0rem;
+    }
+
+    .home-text{
+        top: 100%; 
+        margin-left: -2%;      
+    }
+    .text1{
+        margin-left: 0px;
+        font-size: 3rem;  
+    }
+    .text1 span{
+        font-size: 1.2rem;
+    }
+    .text2{
+        margin-left: 1.563rem;
         font-size: 3rem;
     }
-    .title p{
-        font-size: .9rem;
-        width: 20rem;
-        padding: 2rem 0rem;
-    }
-    .home-text{
-        left: 4%;
-        top: 110%;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 2.1rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 1rem;
-        font-weight: 600;
-        width: 1.25rem;
-    }
-    .text2{
-        margin-left: 6rem;
-        font-size: 2.1rem;
-        font-weight: 600;
-    }
     .text2 span{
-        font-size: 1rem;
-        font-weight: 600;
-    
+        font-size: 1.2rem;
+    }
+    .profession{
+        filter: drop-shadow(0 0 0.75rem rgb(109, 106, 107));
     }
     .profession img{
-        width: 25.625rem;
-        height: 39.75rem;
-        margin-top: 45%;
+        width: 550px;
+        height: 900px;
+
     }
     .profession-container{
-        top: 52%;
-        right: 0;
-        left: 47%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box{
-        top: -0%;
-        right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 23%;
-        top: 24%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 25%;
-        top: 24%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 27%;
-        top: 24%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 29%;
-        top: 24%;
-    }
-
-
-}
-
-/*..............................responsive end max width 768px........................*/
-
-
-
-/*..............................responsive st max width 860px........................*/
-
-@media (max-width:53.75rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 2.5rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -3rem;
-        margin-top: -2rem;
-    }
-    .home-img img{
-        height: 40.75rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 3.2rem;
-    }
-    .title p{
-        font-size: .9rem;
-        width: 20rem;
-        padding: 2rem 0rem;
-    }
-    .home-text{
-        left: 4%;
-        top: 110%;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 2.1rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 1rem;
-        font-weight: 600;
-        width: 1.25rem;
-    }
-    .text2{
-        margin-left: 2rem;
-        font-size: 2.1rem;
-        font-weight: 600;
-    }
-    .text2 span{
-        font-size: 1rem;
-        font-weight: 600;
-    
-    }
-    .profession img{
-        width: 25.625rem;
-        height: 39.75rem;
-        margin-top: 45%;
-    }
-    .profession-container{
-        top: 52%;
-        right: 0;
-        left: 49%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box{
-        top: -0%;
-        right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 28%;
-        top: 23%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 30%;
-        top: 23%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 32%;
-        top: 23%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 34%;
-        top: 23%;
-    }
-
-
-}
-/*..............................responsive end max width 680px........................*/
-
-
-
-/*..............................responsive st max width 600px for hight 1280........................*/
-
-
-
-@media (max-width:53.75rem ){
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 24%;
-        top: 20%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 26%;
-        top: 20%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 28%;
-        top: 20%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 30%;
-        top: 20%;
-    }
-}
-
-
-
-
-
-/*..............................responsive end max width 600px for hight 1280........................*/
-
-
-
-/*..............................responsive st max width 1024px........................*/
-
-/*
-@media (max-width:64rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 2.8rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -2rem;
-        margin-top: -.5rem;
-    }
-    .home-img img{
-        height: 37.55rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 3.4rem;
-    }
-    .title p{
-        font-size: .9rem;
-        width: 20rem;
-        padding: 2rem 0rem;
-    }
-    .home-text{
-        left: 4%;
-        top: 110%;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 2.1rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 1rem;
-        font-weight: 600;
-        width: 1.25rem;
-    }
-    .text2{
-        margin-left: 2rem;
-        font-size: 2.1rem;
-        font-weight: 600;
-    }
-    .text2 span{
-        font-size: 1rem;
-        font-weight: 600;
-    
-    }
-    .profession img{
-        width: 29.625rem;
-        height: 43.75rem;
-        margin-top: 45%;
-    }
-    .profession-container{
-        top: 52%;
+        top: 65%;
         right: 0;
         left: 55%;
-        width: 111.5rem;
-        height: 111.5rem;
+        width: 150.5rem;
+        height: 150.5rem;
 
     }
     .home .profession-container .profession-box{
         top: -0%;
         right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
+        width: 150.5rem;
+        height: 150.5rem;
 
     }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 32%;
-        top: 41.5%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 34%;
-        top: 41.5%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 36%;
-        top: 41.5%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 38%;
-        top: 41.5%;
-    }
-
+    
+.home .profession-container .profession-box .profession{
+    transform-origin: 75.15rem;
+}
+.logo{
+    width: 7.75rem;
+    height: 3.15rem;
 
 }
-*/
-/*..............................responsive end max width 1024px........................*/
-
-
-
-/*..............................responsive st max width 1290px........................*/
-
-@media (max-width:80.625rem ){
+.logo img{
+    left: 0;
+    margin-top: -76;
     
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 2.8rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -2rem;
-        margin-top: -.5rem;
-    }
-    .home-img img{
-        height: 36.55rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 3.4rem;
-    }
+}
+
+}
+
+
+
+
+@media (min-width:1441px) and (max-width:1680px){
     .title p{
-        font-size: .9rem;
-        width: 20rem;
-        padding: 2rem 0rem;
+        width: 40rem;
+        height: 1rem;
+        padding: 0.4rem 0rem;
+        font-size: 1.1rem;
+        padding: 1.4rem 0rem;
     }
+
     .home-text{
-        left: 4%;
-        top: 100%;
+        top: 100%; 
+        margin-left: -2%;      
     }
     .text1{
         margin-left: 0px;
-        font-size: 2.1rem;
-        font-weight: 600;
-        
+        font-size: 3rem;  
     }
     .text1 span{
-        font-size: 1rem;
-        font-weight: 600;
-        width: 1.25rem;
+        font-size: 1.2rem;
     }
     .text2{
-        margin-left: 2rem;
-        font-size: 2.1rem;
-        font-weight: 600;
+        margin-left: 1.563rem;
+        font-size: 3rem;
     }
     .text2 span{
-        font-size: 1rem;
-        font-weight: 600;
-    
+        font-size: 1.2rem;
+    }
+    .profession{
+        filter: drop-shadow(0 0 0.75rem rgb(109, 106, 107));
     }
     .profession img{
-        width: 32.625rem;
-        height: 46.75rem;
-        margin-top: 45%;
+        width: 650px;
+        height: 1100px;
+
     }
     .profession-container{
-        top: 44%;
+        top: 65%;
         right: 0;
         left: 55%;
-        width: 111.5rem;
-        height: 111.5rem;
+        width: 150.5rem;
+        height: 150.5rem;
 
     }
     .home .profession-container .profession-box{
         top: -0%;
         right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
+        width: 150.5rem;
+        height: 150.5rem;
 
     }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
+    
+.home .profession-container .profession-box .profession{
+    transform-origin: 75.15rem;
+}
+.logo{
+    width: 7.75rem;
+    height: 3.15rem;
 
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 36%;
-        top: 45.5%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 38%;
-        top: 45.5%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 40%;
-        top: 45.5%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 42%;
-        top: 45.5%;
-    }
-
+}
+.logo img{
+    left: 0;
+    margin-top: -76;
+    
+}
 
 }
 
-/*..............................responsive end max width 1280px........................*/
 
 
 
-/*..............................responsive st max width 1440px........................*/
 
-@media (max-width:90rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 3rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -2rem;
-        margin-top: -.5rem;
-    }
-    .home-img img{
-        height: 36.55rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 4rem;
-    }
+
+@media (min-width:1681px) and (max-width:2200px){
     .title p{
-        font-size: 1.2rem;
-        width: 30rem;
-        padding: 2rem 0rem;
-    }
-    .home-text{
-        left: 4%;
-        top: 120%;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 2.8rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 1.1rem;
-        font-weight: 500;
-        width: 1.25rem;
-    }
-    .text2{
-        margin-left: 2rem;
-        font-size: 2.8rem;
-        font-weight: 600;
-    }
-    .text2 span{
-        font-size: 1.1rem;
-        font-weight: 500;
-    
-    }
-    .profession img{
-        width: 36.625rem;
-        height: 50.75rem;
-        margin-top: 45%;
-    }
-    .profession-container{
-        top: 44%;
-        right: 0;
-        left: 60%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box{
-        top: -0%;
-        right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 40%;
-        top: 47.5%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 42%;
-        top: 47.5%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 44%;
-        top: 47.5%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 46%;
-        top: 47.5%;
-    }
-
-
-}
-
-/*..............................responsive end max width 1440px........................*/
-
-
-
-/*..............................responsive st max width 1680px........................*/
-
-@media (max-width:105rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 4rem;
-    }
-    .navbar-nav a{
-        font-size: 1.2rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -2rem;
-        margin-top: -.5rem;
-    }
-    .home-img img{
-        height: 42.55rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 4.4rem;
-    }
-    .title p{
-        font-size: 1.2rem;
-        width: 30rem;
-        padding: 2rem 0rem;
-    }
-    .home-text{
-        left: 4%;
-        top: 120%;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 2.8rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 1.1rem;
-        font-weight: 500;
-        width: 1.25rem;
-    }
-    .text2{
-        margin-left: 2rem;
-        font-size: 2.8rem;
-        font-weight: 600;
-    }
-    .text2 span{
-        font-size: 1.1rem;
-        font-weight: 500;
-    
-    }
-    .profession img{
-        width: 41.625rem;
-        height: 55.75rem;
-        margin-top: 45%;
-    }
-    .profession-container{
-        top: 37.6%;
-        right: 0;
-        left: 60%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box{
-        top: -0%;
-        right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 40%;
-        top: 47.5%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 42%;
-        top: 47.5%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 44%;
-        top: 47.5%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 46%;
-        top: 47.5%;
-    }
-
-
-}
-
-/*..............................responsive end max width 1680px........................*/
-
-
-
-/*..............................responsive st max width 1600px for hight 900px........................*/
-
-@media (max-width:105rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 3rem;
-    }
-    .navbar-nav a{
-        font-size: 1.2rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -6rem;
-        margin-top: -.5rem;
-    }
-    .home-img img{
-        height: 42.55rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 4.1rem;
-    }
-    .title p{
-        font-size: 1.2rem;
-        width: 30rem;
-        padding: 2rem 0rem;
-    }
-    .home-text{
-        left: 4%;
-        top: 106%;
-    }
-    .text1{
-        margin-left: 0px;
-        font-size: 2.8rem;
-        font-weight: 600;
-        
-    }
-    .text1 span{
-        font-size: 1.1rem;
-        font-weight: 500;
-        width: 1.25rem;
-    }
-    .text2{
-        margin-left: 2rem;
-        font-size: 2.8rem;
-        font-weight: 600;
-    }
-    .text2 span{
-        font-size: 1.1rem;
-        font-weight: 500;
-    
-    }
-    .profession img{
-        width: 41.625rem;
-        height: 55.75rem;
-        margin-top: 45%;
-    }
-    .profession-container{
-        top: 37.6%;
-        right: 0;
-        left: 56%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box{
-        top: -0%;
-        right: 0%;
-        width: 111.5rem;
-        height: 111.5rem;
-
-    }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 55.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width:.1rem;
-        height: 1.4rem;
-        left: 40%;
-        top: 50.5%;
-    }
-    .green{
-        width:.1rem;
-        height: 1.4rem;
-        left: 42%;
-        top: 50.5%;
-    }
-    .green2{
-        width:.1rem;
-        height: 1.4rem;
-        left: 44%;
-        top: 50.5%;
-    }
-    .black{
-        width:.1rem;
-        height: 1.4rem;
-        left: 46%;
-        top: 50.5%;
-    }
-
-
-}
-
-/*..............................responsive end max width 1600px for 900 hight........................*/
-
-
-/*..............................responsive st max width 1920px........................*/
-
-@media (max-width:120rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 5rem;
-    }
-    .navbar-nav a{
-        font-size: 1.6rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -15rem;
-        margin-top: -.5rem;
-    }
-    .home-img img{
-        height: 50.55rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 5.1rem;
-    }
-    .title p{
-        font-size: 1.7rem;
         width: 40rem;
-        padding: 2rem 0rem;
+        height: 1rem;
+        padding: 0.4rem 0rem;
+        font-size: 1.1rem;
+        padding: 1.4rem 0rem;
     }
+
     .home-text{
-        left: 4%;
-        top: 112%;
+        top: 100%; 
+        margin-left: -2%;      
     }
     .text1{
         margin-left: 0px;
-        font-size: 3.2rem;
-        font-weight: 600;
-        
+        font-size: 3rem;  
     }
     .text1 span{
-        font-size: 1.5rem;
-        font-weight: 500;
-        width: 1.25rem;
+        font-size: 1.2rem;
     }
     .text2{
-        margin-left: 2rem;
-        font-size: 3.2rem;
-        font-weight: 600;
+        margin-left: 1.563rem;
+        font-size: 3rem;
     }
     .text2 span{
-        font-size: 1.5rem;
-        font-weight: 500;
-    
+        font-size: 1.2rem;
+    }
+    .profession{
+        filter: drop-shadow(0 0 0.75rem rgb(58, 56, 57));
     }
     .profession img{
-        width: 46.625rem;
-        height: 61.75rem;
-        margin-top: 45%;
+        width: 750px;
+        height: 1200px;
+
     }
     .profession-container{
-        top: 40.6%;
+        top: 58%;
         right: 0;
-        left: 60%;
-        width: 151.5rem;
-        height: 151.5rem;
+        left: 55%;
+        width: 175.5rem;
+        height: 170.5rem;
 
     }
     .home .profession-container .profession-box{
         top: -0%;
         right: 0%;
-        width: 151.5rem;
-        height: 151.5rem;
+        width: 175.5rem;
+        height: 175.5rem;
 
     }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 75.45rem;
-        padding: 0.813rem 0rem;
-    }
+    
+.home .profession-container .profession-box .profession{
+    transform-origin: 85.15rem;
+}
+.logo{
+    width: 7.75rem;
+    height: 3.15rem;
 
-    .red{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 40%;
-        top: 46.5%;
-    }
-    .green{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 42%;
-        top: 46.5%;
-    }
-    .green2{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 44%;
-        top: 46.5%;
-    }
-    .black{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 46%;
-        top: 46.5%;
-    }
-
+}
+.logo img{
+    left: 0;
+    margin-top: -76;
+    
+}
 
 }
 
-/*..............................responsive end max width 1600px for 900 hight........................*/
 
 
-/*..............................responsive st max width 1920px........................*/
 
-@media (min-width:120rem ){
-    
-    body{
-        overflow-x: hidden;
-    }
-    .navbar{
-        width: 100%;
-        height: 5rem;
-    }
-    .navbar-nav a{
-        font-size: 1.6rem;
-    }
-    .logo{
-        width: 100px;
-        height: 50px;
-        margin-left: -15rem;
-        margin-top: -.5rem;
-    }
-    .home-img img{
-        height: 50.55rem;
-    }
-    .title{
-        top:6%;
-        left: 4%;
-    }
-    .title h1{
-        font-size: 5.1rem;
-    }
+
+@media (min-width:2221px) {
     .title p{
-        font-size: 1.7rem;
-        width: 40rem;
-        padding: 2rem 0rem;
+        width: 60rem;
+        height: 1rem;
+        padding: 0.4rem 0rem;
+        font-size: 1.8rem;
+        padding: 1.4rem 0rem;
     }
+
     .home-text{
-        left: 4%;
-        top: 112%;
+        top: 100%; 
+        margin-left: -2%;      
     }
     .text1{
         margin-left: 0px;
-        font-size: 3.2rem;
-        font-weight: 600;
-        
+        font-size: 4.5rem;  
     }
     .text1 span{
-        font-size: 1.5rem;
-        font-weight: 500;
-        width: 1.25rem;
+        font-size: 1.8rem;
     }
     .text2{
-        margin-left: 2rem;
-        font-size: 3.2rem;
-        font-weight: 600;
+        margin-left: 1.563rem;
+        font-size: 4.5rem;
     }
     .text2 span{
-        font-size: 1.5rem;
-        font-weight: 500;
-    
+        font-size: 1.8rem;
+    }
+    .profession{
+        filter: drop-shadow(0 0 0.75rem rgb(58, 56, 57));
     }
     .profession img{
-        width: 46.625rem;
-        height: 61.75rem;
-        margin-top: 45%;
+        width: 900px;
+        height: 1500px;
+
     }
     .profession-container{
-        top: 40.6%;
+        top: 58%;
         right: 0;
         left: 60%;
-        width: 151.5rem;
-        height: 151.5rem;
+        width: 215.5rem;
+        height: 215.5rem;
 
     }
     .home .profession-container .profession-box{
         top: -0%;
         right: 0%;
-        width: 151.5rem;
-        height: 151.5rem;
+        width: 215.5rem;
+        height: 215.5rem;
 
     }
-    .home .profession-container .profession-box .profession{
-        transform-origin: 75.45rem;
-        padding: 0.813rem 0rem;
-    }
-
-    .red{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 40%;
-        top: 46.5%;
-    }
-    .green{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 42%;
-        top: 46.5%;
-    }
-    .green2{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 44%;
-        top: 46.5%;
-    }
-    .black{
-        width: 2.375rem;
-        height: 2.375rem;
-        left: 46%;
-        top: 46.5%;
-    }
-
+    
+.home .profession-container .profession-box .profession{
+    transform-origin: 106.15rem;
+}
+.logo{
+    width: 7.75rem;
+    height: 3.15rem;
 
 }
+.logo img{
+    left: 0;
+    margin-top: -76;
+    
+}
+.logo{
+    width: 10.75rem;
+    height: 4.95rem;
+    margin-left: -250%;
+}
+.navbar{
+    width: 100%;
+    height: 5.75rem;
+    background-color: #000;
+    
+}
+.navbar-nav a{
+    color: #fff;
+    margin-left: 3.75rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.cart img{
+    width:40px ;
+}
+.search img{
+    width:36px ;
+}
+}
 
-/*..............................responsive end min width 1920px t........................*/
 
